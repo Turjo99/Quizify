@@ -5,6 +5,7 @@ import Main from "./Components/Main/Main";
 import Quiz from "./Components/Quiz/Quiz";
 import Statistics from "./Components/Statistics/Statistics";
 import { ToastContainer, toast } from "react-toastify";
+import Blogs from "./Components/Blogs/Blogs";
 
 function App() {
   <ToastContainer />;
@@ -31,6 +32,11 @@ function App() {
             );
           },
           element: <Quiz></Quiz>,
+        },
+        {
+          path: "/blogs",
+
+          element: <Blogs></Blogs>,
         },
         {},
         {

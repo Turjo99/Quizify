@@ -1,0 +1,14 @@
+.blog {
+  background-color: #2c3333;
+  color: aliceblue;
+  border-radius: 20px;
+}
+.blog:hover {
+  background-color: aliceblue;
+  color: #2c3333;
+  transition: 0.7s;
+  transform: translate(10px, 4px);
+  -webkit-box-shadow: 4px 3px 16px -6px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 4px 3px 16px -6px rgba(0, 0, 0, 0.66);
+  box-shadow: 4px 3px 16px -6px rgba(0, 0, 0, 0.66);
+}
