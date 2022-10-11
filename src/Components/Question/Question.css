@@ -5,7 +5,7 @@
 .question-box {
   background-color: rgb(32, 70, 70);
   color: aliceblue;
-  margin-bottom: 20px;
+  margin: 0 10px 80px 10px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 40px;
 }

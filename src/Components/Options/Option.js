@@ -1,11 +1,13 @@
 import React from "react";
 import "./Option.css";
 
-const Option = ({ options }) => {
-  console.log(options);
+const Option = ({ options, checkAnswer }) => {
+  // console.log(options);
   return (
     <div className="single-options">
-      <div className="option text-center">{options}</div>
+      <div onClick={() => checkAnswer(options)} className="option text-center">
+        {options}
+      </div>
     </div>
   );
 };

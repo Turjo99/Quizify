@@ -5,10 +5,10 @@ import Question from "../Question/Question";
 const Quiz = () => {
   const quiz = useLoaderData();
   const { name, questions } = quiz.data;
-
+  console.log(quiz.data);
   return (
     <div>
-      <h1 className="mb-5">Quiz Topic: {name}</h1>
+      <h1 className="mb-5 mt-5">Quiz Topic: {name}</h1>
       <div className="quiz-container">
         {questions.map((question) => (
           <Question key={question.id} questions={question}></Question>
