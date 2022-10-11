@@ -5,7 +5,7 @@ import("./Home.css");
 
 const Home = () => {
   const allquiz = useLoaderData();
-  console.log(allquiz.data);
+
   const [quizID, setQuizID] = useState([]);
 
   const showQuiz = (id) => {
