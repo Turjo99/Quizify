@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Option from "../Options/Option";
@@ -8,6 +8,10 @@ import("./Question.css");
 
 const Question = ({ questions }) => {
   const { id, question, options, correctAnswer } = questions;
+  const [answer, setAnswer] = useState([]);
+  const showAnswer = (correctAnswer) => {
+    setAnswer(correctAnswer);
+  };
   const checkAnswer = (optionCheck) => {
     console.log(optionCheck);
     if (optionCheck === correctAnswer) {
@@ -51,7 +55,7 @@ const Question = ({ questions }) => {
         theme="dark"
       />
       <h2 className="mb-5">{question}</h2>
-      <span className="eye">
+      <span onClick={() => showAnswer(correctAnswer)} className="eye">
         <FontAwesomeIcon icon={faEye} />
       </span>
       <div className="options">
@@ -59,7 +63,7 @@ const Question = ({ questions }) => {
           <Option key={id} options={option} checkAnswer={checkAnswer}></Option>
         ))}
       </div>
-      ;
+      <h4 className="mt-3">Correct Answer : {answer}</h4>
     </div>
   );
 };
