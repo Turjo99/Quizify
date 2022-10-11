@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import("./Nav.css");
 
 const Nav = () => {
   return (
     <div>
+      <nav class="navbar navigation">
+        <div class="container-fluid">
+          <Link to={"/home"} class=" logo navbar-brand mb-0 h1 mx-auto">
+            Quizify
+          </Link>
+        </div>
+      </nav>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,7 +26,7 @@ const Nav = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -31,11 +36,7 @@ const Nav = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/quiz"}>
-                  Quiz
-                </Link>
-              </li>
+
               <li className="nav-item">
                 <Link className="nav-link" to={"/blog"}>
                   Blog

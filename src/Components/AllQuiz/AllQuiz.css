@@ -1,0 +1,19 @@
+.quiz {
+  background-color: #e7f6f2;
+
+  border-radius: 20px;
+}
+.link {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.link:hover {
+  transition: 0.5s;
+  background-color: aliceblue;
+  color: black;
+}

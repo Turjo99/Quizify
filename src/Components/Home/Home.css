@@ -2,3 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+body {
+  background-color: #a5c9ca;
+}
