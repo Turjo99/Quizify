@@ -1,7 +1,13 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-const AllQuiz = ({ quiz }) => {
-  const { name, logo } = quiz;
+const AllQuiz = ({ quiz, showQuiz }) => {
+  const { name, logo, id } = quiz;
+  const navigate = useNavigate();
+  const navigatequiz = (id) => {
+    navigate("/quiz");
+    showQuiz(id);
+  };
   return (
     <div className="quiz border rounded p-4">
       <div className="">
@@ -9,9 +15,9 @@ const AllQuiz = ({ quiz }) => {
       </div>
       <div className="quiz-info d-flex justify-content-between mt-5">
         <p className="fs-2 fw-bolder">{name}</p>
-        <button type="button" class="btn btn-primary">
-          Start Now
-        </button>
+        <form action="/quiz">
+          <Link to={`/quiz/${id}`}>Start Now</Link>
+        </form>
       </div>
     </div>
   );

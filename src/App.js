@@ -22,9 +22,15 @@ function App() {
           element: <Home></Home>,
         },
         {
-          path: "/quiz",
+          path: "/quiz/:quizID",
+          loader: ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.quizID}`
+            );
+          },
           element: <Quiz></Quiz>,
         },
+        {},
         {
           path: "/statistics",
           element: <Statistics></Statistics>,
