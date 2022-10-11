@@ -8,7 +8,7 @@ const Nav = () => {
       <nav class="navbar navigation">
         <div class="container-fluid">
           <Link to={"/home"} class=" logo navbar-brand mb-0 h1 mx-auto">
-            Quizify
+            The Quizify
           </Link>
           <button
             className="navbar-toggler "
@@ -19,7 +19,7 @@ const Nav = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon text-white"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
