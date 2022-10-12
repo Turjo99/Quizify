@@ -7,7 +7,7 @@ const Nav = () => {
     <div>
       <nav class="navbar navigation">
         <div class="container-fluid">
-          <Link to={"/home"} class=" logo navbar-brand mb-0 h1 mx-auto">
+          <Link to={"/topics"} class=" logo navbar-brand mb-0 h1 mx-auto">
             The Quizify
           </Link>
         </div>
@@ -17,12 +17,8 @@ const Nav = () => {
           <div className="mx-auto" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to={"/home"}
-                >
-                  Home
+                <Link className="nav-link" aria-current="page" to={"/topics"}>
+                  Topics
                 </Link>
               </li>
 

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import("./AllQuiz.css");
 
 const AllQuiz = ({ quiz, showQuiz }) => {
-  const { name, logo, id } = quiz;
+  const { name, logo, id, total } = quiz;
 
   return (
     <div className="quiz border p-4 w-75 mx-auto">
@@ -18,6 +18,7 @@ const AllQuiz = ({ quiz, showQuiz }) => {
           </Link>
         </form>
       </div>
+      <h3 className="mt-2">Total Quiz : {total}</h3>
     </div>
   );
 };

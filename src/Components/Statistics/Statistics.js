@@ -12,7 +12,7 @@ import {
 const Statistics = () => {
   const datas = useLoaderData();
   const { data } = datas;
-  console.log(data);
+
   return (
     <div className="w-75">
       <ResponsiveContainer width="100%" height={400}>

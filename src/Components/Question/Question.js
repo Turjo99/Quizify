@@ -13,7 +13,6 @@ const Question = ({ questions }) => {
     setAnswer(correctAnswer);
   };
   const checkAnswer = (optionCheck) => {
-    console.log(optionCheck);
     if (optionCheck === correctAnswer) {
       toast.success("Correct Answer!!!", {
         position: "top-center",
@@ -38,7 +37,6 @@ const Question = ({ questions }) => {
       });
     }
   };
-  console.log(correctAnswer);
 
   return (
     <div className="question-box container mx-auto">

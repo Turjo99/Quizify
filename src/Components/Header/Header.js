@@ -15,13 +15,13 @@ const Header = () => {
           </div>
           <div className="col-md-6 col-sm-12 my-auto">
             <div className="card-body ">
-              <h5 className="card-title fs-1 fw-bolder">
+              <h5 className=" fs-1 fw-bolder">
                 Explore the best in you with us
               </h5>
               <p className="card-text fs-4">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Be educated so that you can change the world. An educated mind
+                can teach many. An educated mind is better than an empty one.
+                The only weapon to fight injustice is Education.
               </p>
             </div>
           </div>

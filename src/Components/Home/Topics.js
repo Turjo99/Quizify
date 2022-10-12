@@ -4,14 +4,13 @@ import AllQuiz from "../AllQuiz/AllQuiz";
 import Header from "../Header/Header";
 import("./Home.css");
 
-const Home = () => {
+const Topics = () => {
   const allquiz = useLoaderData();
 
   const [quizID, setQuizID] = useState([]);
 
   const showQuiz = (id) => {
     setQuizID(id);
-    console.log(quizID);
   };
   return (
     <div className="">
@@ -25,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Topics;
