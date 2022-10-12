@@ -2,12 +2,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
 import Main from "./Components/Main/Main";
-
+import Quiz from "./Components/Quiz/Quiz";
 import Statistics from "./Components/Statistics/Statistics";
 import { ToastContainer, toast } from "react-toastify";
 import Blogs from "./Components/Blogs/Blogs";
-import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Topics from "./Components/Home/Topics";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 function App() {
   <ToastContainer />;
@@ -30,21 +30,22 @@ function App() {
           path: "/quiz/:quizID",
 
           loader: ({ params }) => {
+            console.log(params.quizID);
             return fetch(
               `https://openapi.programming-hero.com/api/quiz/${params.quizID}`
             );
           },
-        },
-        {
-          path: "/*",
-          element: <ErrorPage></ErrorPage>,
+          element: <Quiz></Quiz>,
         },
         {
           path: "/blogs",
 
           element: <Blogs></Blogs>,
         },
-        {},
+        {
+          path: "/*",
+          element: <ErrorPage></ErrorPage>,
+        },
         {
           path: "/statistics",
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
