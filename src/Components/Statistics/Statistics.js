@@ -15,9 +15,9 @@ const Statistics = () => {
   console.log(data);
   return (
     <div className="w-75">
-      <ResponsiveContainer width="100%" height={420}>
+      <ResponsiveContainer width="100%" height={400}>
         <AreaChart
-          width={930}
+          width="900"
           height={420}
           data={data}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}

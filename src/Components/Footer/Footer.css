@@ -1,0 +1,10 @@
+.footer {
+  height: 80px;
+  background-color: #212529;
+  color: aliceblue;
+  margin-top: auto;
+
+  bottom: 0px;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+}
