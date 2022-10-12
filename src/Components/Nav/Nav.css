@@ -7,3 +7,7 @@
   font-family: "Pacifico", cursive;
   color: tomato;
 }
+.navbar-toggler {
+  background-color: aliceblue;
+  color: #2c3333;
+}

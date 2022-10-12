@@ -10,8 +10,8 @@ const AllQuiz = ({ quiz, showQuiz }) => {
       <div className="">
         <img src={logo} className="w-75 p-2" alt="" />
       </div>
-      <div className="quiz-info d-flex justify-content-between mt-5">
-        <p className="fs-2 fw-bolder">{name}</p>
+      <div className="quiz-info d-flex justify-content-between align-items-center mt-5 flex-lg-row flex-sm-column">
+        <p className="fs-2 fw-bolder  ">{name}</p>
         <form action="/quiz">
           <Link className="link" to={`/quiz/${id}`}>
             Start Now
